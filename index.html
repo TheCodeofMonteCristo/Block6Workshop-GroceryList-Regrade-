@@ -1,0 +1,104 @@
+
+<!-- PseudoCode Explaining all of the Overall Document:
+
+Document Type Declaration:
+
+<!DOCTYPE html> declares that the document is an HTML5 document.
+HTML Structure:
+
+The root element is <html lang="en">, specifying that the language of the page is English.
+Head Section:
+
+<head> contains metadata and other information used by the browser.
+<meta charset="UTF-8" />: Sets the character encoding to UTF-8, which supports a wide range of characters.
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />: Ensures the page is responsive, adjusting its layout based on the device's screen size.
+<title>Grocery List</title>: Defines the title of the page, displayed in the browser's tab.
+<link rel="stylesheet" href="./style.css" />: Links to an external CSS file (style.css), which will style the page.
+Body Section:
+
+The main content of the page resides inside the <body> tag.
+Header:
+
+<header> contains a heading (<h1>) with the text "My Very Organized Grocery List". It has a class grocery-list-heading, which can be styled in the external CSS.
+Pantry Items Section:
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- The <meta charset="UTF-8"> ensures that the page supports various characters and symbols. 
+    The viewport meta tag ensures the page scales properly on mobile devices. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The <title> tag defines the page title that appears in the browser tab. -->
+    <title>Grocery List</title>
+
+    <!-- Links an external CSS file (style.css) to style the elements on the page. -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- The <header> contains the main heading of the page. The class 'grocery-list-heading' can be used in CSS to apply specific styling. -->
+    <header>
+        <h1 class="grocery-list-heading">My Very Organized Grocery List</h1>
+    </header>
+
+    <!-- The <section> groups together all pantry-related items with a heading for clarity. 
+    Each type of pantry item is placed in its own <div> with subheadings and lists. -->
+    <section class="grocery-section">
+        <h2 class="type-heading">Pantry Items</h2>
+
+        <div class="category">
+            <h3 class="category-heading">Canned</h3>
+            <ul>
+                <li>Corn</li>
+                <li>Tuna</li>
+                <li>Green Beans</li>
+                <li>Beans</li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h3 class="category-heading">Dry Goods</h3>
+            <ul>
+                <li>Rice</li>
+                <li>Lentils</li>
+                <li>Oats</li>
+                <li>Pancake Mix</li>
+            </ul>
+        </div>
+
+        <!-- An image is included to visually represent the pantry section, with alt text for accessibility. Image doesn't work, simulates link. -->
+        <img class="type-img" src="./testDummyPhoto.jpg" alt="sample of a link">
+    </section>
+
+    <!-- The "Freezer Items" section follows a similar structure to the pantry section, grouping frozen items into categories like veggies and snacks. -->
+    <section class="grocery-section">
+        <h2 class="type-heading">Freezer Items</h2>
+
+        <div class="category">
+            <h3 class="category-heading">Veggies</h3>
+            <ol>
+                <li>Broccoli</li>
+                <li>Carrots</li>
+                <li>Cauliflower</li>
+                <li>Bell Peppers</li>
+            </ol>
+        </div>
+
+        <div class="category">
+            <h3 class="category-heading">Snacks</h3>
+            <ol>
+                <li>Chicken Nuggets</li>
+                <li>Hot Pockets</li>
+                <li>Fries</li>
+                <li>Tater Tots</li>
+            </ol>
+        </div>
+
+        <!-- Another image is included for the freezer section, providing a visual representation of its contents. -->
+        <img class="type-img" src="./dummyCodePhoto2.jpg" alt="Another broken sample photo">
+    </section>
+</body>
+</html>
